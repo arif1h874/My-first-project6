@@ -36,7 +36,8 @@ def speak(text):
     os.remove("temp.mp3")
     
 def aiprocces(command):
-    client =()
+    client =OpenAI(
+    api_key="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",)
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
