@@ -11,6 +11,7 @@ import os
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
+newsapi="9ee9b78dd33622f18446197e40837699"
 
 
 def speak_old(text):
