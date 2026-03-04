@@ -84,7 +84,7 @@ def process_command(c):
         else:
             speak("Sorry I don't found this app")
     elif "news" in c.lower():
-      
+        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=bd&apiKey={newsapi}")
         if r.status_code == 200:
             data = r.json()
 
